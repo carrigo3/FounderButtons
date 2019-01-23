@@ -18,46 +18,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qQ-aB-Bsn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qQ-aB-Bsn">
                                 <rect key="frame" x="16" y="44" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gYZ-Z0-Bkc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRi-mD-Tz0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRi-mD-Tz0">
                                 <rect key="frame" x="16" y="102" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AU3-Bw-Lze"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <color key="textColor" red="0.76261585949999999" green="0.67311882970000003" blue="0.52938467259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebR-jA-J8d">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebR-jA-J8d">
                                 <rect key="frame" x="109" y="160" width="157" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Who founded Google? "/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="qgs-oN-2lJ"/>
+                                </constraints>
+                                <state key="normal" title="Who founded Google? ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="googleFounders:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QsU-ex-0vd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAk-62-zV1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAk-62-zV1">
                                 <rect key="frame" x="76" y="198" width="223" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Who founded Rent The Runway?"/>
+                                <state key="normal" title="Who founded Rent The Runway?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="rentTheRunwayFounders:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxk-gc-f67"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ni8-a4-LLK">
-                                <rect key="frame" x="169" y="274" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Clear"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ni8-a4-LLK">
+                                <rect key="frame" x="169.66666666666666" y="274" width="36" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4dz-FK-iKP"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1qQ-aB-Bsn" secondAttribute="trailing" constant="16" id="3l7-6r-b9N"/>
+                            <constraint firstItem="YAk-62-zV1" firstAttribute="top" secondItem="ebR-jA-J8d" secondAttribute="bottom" constant="8" id="4il-f9-BE6"/>
+                            <constraint firstItem="ebR-jA-J8d" firstAttribute="top" secondItem="TRi-mD-Tz0" secondAttribute="bottom" constant="8" id="CwI-ZH-Pgn"/>
+                            <constraint firstItem="YAk-62-zV1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F3q-2P-kCc"/>
+                            <constraint firstItem="TRi-mD-Tz0" firstAttribute="top" secondItem="1qQ-aB-Bsn" secondAttribute="bottom" constant="8" id="HeI-9h-clX"/>
+                            <constraint firstItem="1qQ-aB-Bsn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IZG-nO-WaC"/>
+                            <constraint firstItem="ebR-jA-J8d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MiT-1o-cVq"/>
+                            <constraint firstItem="1qQ-aB-Bsn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NOs-lj-z8g"/>
+                            <constraint firstItem="Ni8-a4-LLK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OIa-zJ-3q7"/>
+                            <constraint firstItem="Ni8-a4-LLK" firstAttribute="top" secondItem="YAk-62-zV1" secondAttribute="bottom" constant="46" id="PDr-IW-11D"/>
+                            <constraint firstItem="YAk-62-zV1" firstAttribute="top" secondItem="ebR-jA-J8d" secondAttribute="bottom" constant="8" id="RH0-6n-KEz"/>
+                            <constraint firstItem="TRi-mD-Tz0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hX3-Xm-bHl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TRi-mD-Tz0" secondAttribute="trailing" constant="16" id="i96-DG-54t"/>
+                            <constraint firstItem="Ni8-a4-LLK" firstAttribute="top" secondItem="YAk-62-zV1" secondAttribute="bottom" constant="46" id="lGD-4k-o1Q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
